@@ -1,25 +1,27 @@
-# shortcut
+# shortcut-4-navercloud
 
-This template should help get you started developing with Vue 3 in Vite.
+Interview questions
 
-## Recommended IDE Setup
+试题如下：
+现需要设计一个聊天常用语热键，主要覆盖如下功能
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1.支持热键的创建。要求：热键的创建为功能键+数字键，如 ctrl+ [0-9]
 
-## Type Support for `.vue` Imports in TS
+2.支持热键的使用。要求：不能覆盖浏览器自带快捷键功能 ctrl+a/c/v 等
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+3.支持热键提示的面板唤醒。要求：输入框中长按功能键（ctrl）唤醒面板，快速按下热键时则不需要唤醒
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+4.唤醒提示面板后可以按上下键切换选择，enter 键确认输入
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+请考虑扩展性，如果后续需要做 ctrl+shift+\*,需要符合开闭原则
 
-## Customize configuration
+示例：
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+设置 ctrl+1 = ‘hello’, 在输入框中同时按下 ctrl+1,输入框中输入 hello
+
+提示面板示例如下 gif 图
+
+![](./1662541403896.gif)
 
 ## Project Setup
 
