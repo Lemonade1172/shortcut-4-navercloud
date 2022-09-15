@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
+import ShortcutInput from "./components/ShortcutInput.vue";
 </script>
 
 <template>
@@ -14,12 +15,9 @@ import HelloWorld from "./components/HelloWorld.vue";
 
     <div class="wrapper">
       <HelloWorld msg="shortcut" />
+      <ShortcutInput></ShortcutInput>
     </div>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
